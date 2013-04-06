@@ -1,0 +1,30 @@
+@import url('css/bootstrap.css');
+@import url('css/bootstrap.responsive.css');
+
+/* basic layout */
+body {
+	background-color: #fff;
+	font-family: lucida sans unicode, ;
+}
+
+.hero-unit {
+	text-align: center;
+	background: #f9f9f9;
+	
+}
+
+.navbar {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.submit {
+	color: #000;
+
+}
+
+#block {
+	width: 80%;
+	margin: 0 auto;
+}
+
