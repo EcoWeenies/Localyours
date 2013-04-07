@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>YoursLocally</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- javascript -->
+
+  </head>
+<<script>
+var pie = new Object();
+pie.name = "Osogood Meats";
+pie.description = "European-style cold cuts, sausages, fresh beef and pork products.";
+pie.email = "osogood@bellnet.ca";
+pie.phone = "Call 519-741-2287";
+pie.website = "http://www.osogoodmeats.com";
+pie.image = "osogood-logo.jpg";
+
+		var products = new Array();
+
+product = new Object();
+product.name = "Beef: Striploin Tip Roast";
+product.price = "$7.50/lb";
+product.feed = "Grass Fed Beef";
+products.push(product);
+
+product = new Object();
+product.name = "Beef: Brisket";
+product.price = "$6.50/lb";
+product.feed = "Grass Fed Beef";
+products.push(product);
+
+product = new Object();
+product.name = "Beef: Sirloin Steak";
+product.price = "$10.50/lb";
+product.feed = "Grass Fed Beef";
+products.push(product);
+
+product = new Object();
+product.name = "Beef: NY Strip";
+product.price = "$13.50/lb";
+product.feed = "Grass Fed Beef";
+products.push(product);
+
+product = new Object();
+product.name = "Beef: T-Bone";
+product.price = "$13.50/lb";
+product.feed = "Grass Fed Beef";
+products.push(product);
+
+product = new Object();
+product.name = "Beef: Ribeye";
+product.price = "$13.50/lb";
+product.feed = "Grass Fed Beef";
+products.push(product);
+
+product = new Object();
+product.name = "Beef: Flank Steak";
+product.price = "$12.50/lb";
+product.feed = "Grass Fed Beef";
+products.push(product);
+
+product = new Object();
+product.name = "Beef: Filet";
+product.price = "$24.50/lb";
+product.feed = "Grass Fed Beef";
+products.push(product);
+
+product = new Object();
+product.name = "Beef: Ground Beef";
+product.price = "$6.50/lb";
+product.feed = "Grass Fed Beef";
+products.push(product);
+
+product = new Object();
+product.name = "Beef: Skirt Steak";
+product.price = "$12.50/lb";
+product.feed = "Grass Fed Beef";
+products.push(product);
+
+product = new Object();
+product.name = "Beef: Stew Meat";
+product.price = "$6.50/lb";
+product.feed = "Grass Fed Beef";
+products.push(product);
+	</script>
+  <body>
+
+    <div class="navbar">
+    <div class="container">
+        
+        <a class="navbar-brand" href="/"><img src="logo.png"></a>
+        <div class="nav-collapse collapse pull-right">
+            <ul class="nav">
+                <!--<li><a href="/features/">Features</a></li>-->
+                <li><a href="about.html">About</a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div id="banner" class="hero-unit">
+        <table>
+					<tr><td>
+				<script>
+					pie.name = "Osogood Meats";
+					pie.description = "European-style cold cuts, sausages, fresh beef and pork products.";
+					pie.email = "osogood@bellnet.ca";
+					pie.phone = "Call 519-741-2287";
+					pie.website = "http://www.osogoodmeats.com";
+					pie.image = "osogood-logo.jpg";
+					document.write("<img src='data/" + pie.image + "'/>");
+					document.write("<h2>Producer</h2>" + pie.name);
+					document.write("<h2>Description</h2>" + pie.description);
+					document.write("<h2>Email</h2><a href='mailto:'" + pie.email + "'>" + pie.email + "</a>");
+					document.write("<h2>Phone</h2>" + pie.phone);
+					document.write("<h2>Website</h2><a href='" + pie.website + "'>" + pie.website + "</a>");
+					document.write("<table>");
+					document.write("<tr><td>Product</td><td>Price</td></tr>");
+					for(var i = 0; i < products.length; i++){
+						document.write("<tr><td>");
+						document.write(products[i].name);
+						document.write(products[i].price);
+						document.write("</td></tr>");
+					}
+					document.write("</table>");
+				</script>
+				</td>
+				<td>
+				<img src="ourmap.png"/>
+				</td></tr>
+				</table>
+      </div>
+
+        <div id="footercontainer">
+          <footer>
+            <div class="span2">
+              <h4>About</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+
+            </div>
+            <div class="span2">
+              <h4>Community</h4>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+          </div>
+
+      </footer>
+
+    </div>
+  </body>
+    
