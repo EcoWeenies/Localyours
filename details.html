@@ -14,7 +14,7 @@
     <!-- javascript -->
 
   </head>
-<<script>
+<script>
 var pie = new Object();
 pie.name = "Osogood Meats";
 pie.description = "European-style cold cuts, sausages, fresh beef and pork products.";
@@ -22,6 +22,8 @@ pie.email = "osogood@bellnet.ca";
 pie.phone = "Call 519-741-2287";
 pie.website = "http://www.osogoodmeats.com";
 pie.image = "osogood-logo.jpg";
+pie.address = "460 Wismer Street Waterloo, Ontario N2K 2K7";
+pie.hours = "Wednesday - 9am to 5pm Thursday - 9am to 6pm Friday - 9am to 7pm Saturday - 9am to 4pm";
 
 		var products = new Array();
 
@@ -113,23 +115,20 @@ products.push(product);
         <table>
 					<tr><td>
 				<script>
-					pie.name = "Osogood Meats";
-					pie.description = "European-style cold cuts, sausages, fresh beef and pork products.";
-					pie.email = "osogood@bellnet.ca";
-					pie.phone = "Call 519-741-2287";
-					pie.website = "http://www.osogoodmeats.com";
-					pie.image = "osogood-logo.jpg";
 					document.write("<img src='data/" + pie.image + "'/>");
 					document.write("<h2>Producer</h2>" + pie.name);
 					document.write("<h2>Description</h2>" + pie.description);
 					document.write("<h2>Email</h2><a href='mailto:'" + pie.email + "'>" + pie.email + "</a>");
 					document.write("<h2>Phone</h2>" + pie.phone);
 					document.write("<h2>Website</h2><a href='" + pie.website + "'>" + pie.website + "</a>");
+					document.write("<h2>Address</h2>" + pie.address);
+					document.write("<h2>Hours</h2>" + pie.hours);
 					document.write("<table>");
 					document.write("<tr><td>Product</td><td>Price</td></tr>");
 					for(var i = 0; i < products.length; i++){
 						document.write("<tr><td>");
 						document.write(products[i].name);
+						document.write("</td><td>");
 						document.write(products[i].price);
 						document.write("</td></tr>");
 					}
